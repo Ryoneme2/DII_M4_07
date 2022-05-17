@@ -1,16 +1,18 @@
-// factorial for loop
-let num = 3
-let factorialFor = 1
-let factorialWhile = 1
-for (let i = 1; i <= num; i++) {
-  factorialFor *= i
-}
-console.log({factorialFor})
+// fibonacci
+const num = 11;
+let fibo1 = 0;
+let fibo2 = 1;
+let tmp;
 
-// while
-let numW = 4
-while (numW > 0) {
-  factorialWhile *= numW
-  numW--
+if (num === 0) {
+  console.log(0);
+} else if (num === 1) {
+  console.log(1);
+} else {
+  for (let i = 0; i < num-1; i++) {
+    tmp = fibo2;
+    fibo2 = fibo1 + fibo2;
+    fibo1 = tmp;
+  }
+  console.log(fibo2);
 }
-console.log({factorialWhile})
