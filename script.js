@@ -16,4 +16,4 @@ else {
   grade = 'F'
 }
 
-console.log(`${grade} ${score}}`);
+console.log(`${grade} ${score}`);
