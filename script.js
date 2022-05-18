@@ -63,4 +63,4 @@ const getAverageTax = (salary) => {
 
 console.log(getSalary().sum);
 console.log(getSalary().averageSalary);
-console.log(getAverageTax(getSalary().sum));
+console.log(getAverageTax(getSalary().averageSalary));
