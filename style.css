@@ -10,13 +10,22 @@
   text-align: center;
 }
 #ok {
-  background-color: #00ff00;
+  background-color: #626262;
   color: black;
   border: 1px solid black;
   cursor: pointer;
 }
+.active {
+  background-color: #00ff00;
+}
 #cancel {
   background-color: orange;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#light {
+  background-color: rgb(255, 225, 169);
   color: black;
   border: 1px solid black;
   cursor: pointer;
