@@ -21,3 +21,9 @@
   border: 1px solid black;
   cursor: pointer;
 }
+#showDate {
+  background-color: rgb(253, 97, 97);
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
