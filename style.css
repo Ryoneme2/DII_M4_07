@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+.flex-item {
+  flex-basis: 50px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+#ok {
+  background-color: #00ff00;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#cancel {
+  background-color: orange;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
