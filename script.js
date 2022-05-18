@@ -1,4 +1,4 @@
-const getSalary = () => {
+const getSalaryInfo = () => {
   const persons = [
     {
       name: "A",
@@ -27,17 +27,24 @@ const getSalary = () => {
     },
   ];
 
-  let sum = 0;
+  let sum = {
+    salary: 0,
+    tax: 0,
+  };
   for (i in persons) {
-    sum += (persons[i].salary) * 12;
+    sum.salary += (persons[i].salary) * 12;
+    sum.tax += getTax(persons[i].salary * 12);
   }
+
+  const tax = sum.tax / persons.length;
   return {
-    sum,
-    averageSalary: sum / persons.length,
+    sum : sum.salary,
+    averageSalary: sum.salary / persons.length,
+    tax,
   };
 };
 
-const getAverageTax = (salary) => {
+const getTax = (salary) => {
   let tax = 0;
 
   if (salary > 5000000) {
@@ -61,6 +68,9 @@ const getAverageTax = (salary) => {
   return tax
 };
 
-console.log(getSalary().sum);
-console.log(getSalary().averageSalary);
-console.log(getAverageTax(getSalary().averageSalary));
+// console.log(
+// getSalaryInfo()
+// );
+console.log(`Sum Salary : ${getSalaryInfo().sum}`);
+console.log(`Average Salary : ${getSalaryInfo().averageSalary}`);
+console.log(`Tax Average : ${getSalaryInfo().tax}`);
